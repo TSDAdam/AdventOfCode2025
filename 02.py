@@ -12,7 +12,7 @@ for row in ids:
     lo = int(idrange[0])
     hi = int(idrange[1])
     for x in range(lo, hi + 1):
-        if len(str(x)) % 2 != 0:
+        if len(str(x)) % 2 != 0: # odd length IDs can never match
             continue
         else:    
             mid = int(len(str(x)) / 2)
